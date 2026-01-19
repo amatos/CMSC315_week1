@@ -1,0 +1,28 @@
+@startuml
+class CheckDelimiters {
+    + main(args : String[]) : void
+
+    - isComplementaryDelimiter(leftDelimiter: char, rightDelimiter: char) : boolean
+    - isLeftDelimiter(delimiter: char) : boolean
+    - isRightDelimiter(delimiter: char) : boolean
+    - mismatchedDelimiter(character: char, characterPosition: String) : void
+
+}
+
+class SourceFileReader {
+
+    - charIndex : int
+    - currentLine : String
+    - fileReader : Scanner
+    - lineNumber : int
+
+    + SourceFileReader(filename: String)
+    + close() : void
+    + getNextCharacter() : char
+    + getCharacterPosition() : String
+
+    - getNextCharAfterSkip() : char
+}
+
+CheckDelimiters --> SourceFileReader : creates
+@enduml
