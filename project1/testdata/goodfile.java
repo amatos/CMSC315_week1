@@ -19,15 +19,12 @@ public class goodfile {
       }
     }
   }
-  private static void mismatchedDelimiter(char character,
-                                          String characterPosition) {
+  private static void mismatchedDelimiter(char character, String characterPosition) {
     // Print an error message indicating the unmatched right-delimiter and
     // its position.
-    System.out.println("Unmatched right delimiter '" + character +
-      "' found at " + characterPosition);
+    System.out.println("Unmatched right delimiter '" + character + "' found at " + characterPosition);
   }
-  private static boolean isMatchingType(char leftDelimiter,
-                                        char rightDelimiter) {
+  private static boolean isMatchingType(char leftDelimiter, char rightDelimiter) {
     /*
     Long comment explaining the purpose of the method and its parameters.
     */

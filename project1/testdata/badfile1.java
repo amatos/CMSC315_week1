@@ -23,8 +23,7 @@ public class badfile1 {
     String characterPosition) {
       // Print an error message indicating the unmatched right-delimiter and
       // its position. [
-      System.out.println("Unmatched right delimiter '" + character +
-        "' found at " + characterPosition);
+      System.out.println("Unmatched right delimiter '" + character + "' found at " + characterPosition);
   ) // Bad delimiter )
     }
   }
